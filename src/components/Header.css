@@ -1,0 +1,104 @@
+.nav-icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-icon {
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-icon:hover {
+  transform: translateY(-4px);
+}
+
+.icon-btn__icon {
+  color: white;
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  opacity: 0.95;
+}
+
+.icon-btn__label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -20px;
+  left: 25%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.nav-icon:hover .icon-btn__label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Enhanced glass effect */
+.icon-btn__back {
+  opacity: 0.95;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  transform: rotate(15deg) !important;
+}
+
+.icon-btn__front {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.nav-icon:hover .icon-btn__front {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.05);
+}
+
+/* Adjust button size */
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  border-radius: 14px;
+  overflow: visible;
+  position: relative;
+}
+
+/* Remove outline on focus */
+.icon-btn:focus {
+  outline: none;
+}
+
+/* Add subtle glow effect on hover */
+.nav-icon:hover .icon-btn__back {
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  transform: rotate(25deg) !important;
+}
+
+/* Enhance gradient interaction */
+.icon-btn__back::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  border-radius: inherit;
+  transform: rotate(-15deg);
+}
+
+.nav-icon:hover .icon-btn__back::before {
+  transform: rotate(-25deg);
+} 
