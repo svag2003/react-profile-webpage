@@ -34,7 +34,7 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <Avatar
-            src="/headshot.jpg"
+            src={process.env.PUBLIC_URL + "/headshot.jpg"}
             alt="Ashis Gajula"
             sx={{
               width: 200,

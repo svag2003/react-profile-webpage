@@ -101,7 +101,9 @@ const certifications = [
     ],
     skills: ["Vector Search", "Semantic Search", "Embeddings", "Search Optimization"],
     validUntil: "2025"
-  }
+  },
+  
+  
 ];
 
 const modalStyle = {
