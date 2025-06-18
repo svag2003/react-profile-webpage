@@ -300,7 +300,7 @@ export default function Projects() {
     <Box 
       component="section" 
       sx={{ 
-        minHeight: '80vh',
+        minHeight: '65vh',
         width: '100vw',
         position: 'relative',
         display: 'flex',
@@ -310,7 +310,7 @@ export default function Projects() {
         overflow: 'visible',
         left: '50%',
         transform: 'translateX(-50%)',
-        py: 4
+        py: 2
       }}
     >
       <Typography 
@@ -319,7 +319,7 @@ export default function Projects() {
         sx={{
           position: 'relative',
           zIndex: 2,
-          mb: 2,
+          mb: 1,
           width: '100%'
         }}
       >
